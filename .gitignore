@@ -4,3 +4,4 @@ __pycache__/
 catboost_info/
 *.aux
 *.log.tex
+data/banglabook/
