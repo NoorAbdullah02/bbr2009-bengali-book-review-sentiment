@@ -100,16 +100,21 @@ c.set_title('(c) Blind LLM audit', fontsize=7, loc='left')
 for x_ in (a, b, c): x_.yaxis.grid(True, lw=0.4, color='#e6e6e3'); x_.set_axisbelow(True)
 fig.tight_layout(); fig.savefig(O + 'fig4_explain_noise.pdf'); fig.savefig(O + 'fig4_explain_noise.png', dpi=300); plt.close()
 
-# ---------- Fig 5: SHAP tokens (Bengali) ----------
+# ---------- Fig 5: SHAP tokens (Bengali, with English glosses) ----------
+G = {'অখ': 'awful (word piece)', 'বিরক্তিকর': 'annoying', 'লাগেনি': "didn't like", 'বাজে': 'bad', 'ফালতু': 'worthless', 'নি': 'not (suffix)',
+     'সেরা': 'best', 'দারুণ': 'great', 'চমৎকার': 'excellent', 'অসাধারন': 'extraordinary', 'অসাধারণ': 'extraordinary', 'বেস্ট': 'best'}
 t = pd.read_csv('./results/explain2/token_shap_all402.csv')
 t = t[t['count'] >= 4].sort_values('mean_shap'); top = pd.concat([t.head(6), t.tail(6)])
 plt.rcParams['font.family'] = 'Noto Sans Bengali'
 fig, ax = plt.subplots(figsize=(3.45, 2.1))
 ax.barh(range(len(top)), top.mean_shap, color=[OR if v < 0 else BL for v in top.mean_shap], height=0.7, edgecolor='white')
 ax.set_yticks(range(len(top))); ax.set_yticklabels(top.token, fontsize=7.5); ax.axvline(0, color=MUT, lw=0.6)
+ax.set_xlim(-0.2, 0.72)
+for k, tok_ in enumerate(top.token):
+    ax.text(0.42, k, G.get(tok_, ''), va='center', ha='left', fontsize=6.2, color=MUT, fontfamily='DejaVu Sans')
 ax.set_xlabel('Mean SHAP toward positive class', fontsize=7, fontfamily='DejaVu Sans'); ax.xaxis.grid(True, lw=0.4, color='#e6e6e3'); ax.set_axisbelow(True)
 fig.tight_layout(); fig.savefig(O + 'fig5_shap.pdf'); fig.savefig(O + 'fig5_shap.png', dpi=300); plt.close()
-print('ok'); print(top.token.tolist())
+print('ok'); print(top.token.tolist(), [G.get(x) for x in top.token])
 
 # ---------- Fig 7: transfer heatmap ----------
 import matplotlib.colors as mc
