@@ -1,0 +1,21 @@
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 56831.80it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert_large
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[W1107 13:01:01.418046446 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 268435456 bytes (free: 79495168, total: 12346195968).
+   367s ep0 step3458 val {'acc': 0.9135771226116665, 'wf1': 0.9091338735720167, 'mf1': 0.6126777870345453}
+   756s ep0 step6916 val {'acc': 0.9256611413387321, 'wf1': 0.9198154997284476, 'mf1': 0.6596169632269739}
+  1150s ep1 step10374 val {'acc': 0.9282550930026572, 'wf1': 0.9211035510614146, 'mf1': 0.6627609969134289}
+  1542s ep1 step13832 val {'acc': 0.9329368594204732, 'wf1': 0.9234272282822925, 'mf1': 0.6659958437148207}

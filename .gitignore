@@ -1,0 +1,6 @@
+models/
+__pycache__/
+*.pyc
+catboost_info/
+*.aux
+*.log.tex

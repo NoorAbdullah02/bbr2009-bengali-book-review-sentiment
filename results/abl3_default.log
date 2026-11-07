@@ -1,0 +1,258 @@
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 63282.37it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+    19s primary seed0 fold0 cv_acc=0.9502 cv_f1=0.9502 ext_acc=0.7398
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 47975.26it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+    38s primary seed0 fold1 cv_acc=0.9279 cv_f1=0.9278 ext_acc=0.7370
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 42486.52it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+    57s primary seed0 fold2 cv_acc=0.9279 cv_f1=0.9278 ext_acc=0.7375
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 56217.03it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+    77s primary seed0 fold3 cv_acc=0.9279 cv_f1=0.9278 ext_acc=0.7120
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 38395.81it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+    95s primary seed0 fold4 cv_acc=0.9426 cv_f1=0.9426 ext_acc=0.7252
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 43957.97it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+   114s primary seed1 fold0 cv_acc=0.9478 cv_f1=0.9477 ext_acc=0.7161
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 44413.99it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+   134s primary seed1 fold1 cv_acc=0.9403 cv_f1=0.9403 ext_acc=0.7504
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 47076.00it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+   153s primary seed1 fold2 cv_acc=0.9179 cv_f1=0.9179 ext_acc=0.7463
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 51856.28it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+   172s primary seed1 fold3 cv_acc=0.9279 cv_f1=0.9279 ext_acc=0.7432
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 50657.71it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+   191s primary seed1 fold4 cv_acc=0.9576 cv_f1=0.9576 ext_acc=0.7491
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 49350.65it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+   210s primary seed2 fold0 cv_acc=0.9453 cv_f1=0.9453 ext_acc=0.7387
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 47164.67it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+   229s primary seed2 fold1 cv_acc=0.9403 cv_f1=0.9403 ext_acc=0.7300
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 47602.14it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+   248s primary seed2 fold2 cv_acc=0.9328 cv_f1=0.9328 ext_acc=0.7294
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 39959.27it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+   267s primary seed2 fold3 cv_acc=0.9502 cv_f1=0.9502 ext_acc=0.7499
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 48419.45it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+   286s primary seed2 fold4 cv_acc=0.9401 cv_f1=0.9401 ext_acc=0.7057
+      cv_acc   cv_f1  cv_wf1  ext_acc
+mean  0.9384  0.9384  0.9384   0.7340
+std   0.0110  0.0111  0.0111   0.0141

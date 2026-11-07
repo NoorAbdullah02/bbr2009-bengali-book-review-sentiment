@@ -1,0 +1,13 @@
+{
+ "validation_best_weighted_f1": 0.9182779586053833,
+ "test": {
+  "split": "test",
+  "acc": 0.930410577592206,
+  "weighted_f1": 0.9187452194933922,
+  "macro_f1": 0.6413365007503495
+ },
+ "epochs": 3,
+ "lr": 2e-05,
+ "bs": 16,
+ "maxlen": 128
+}

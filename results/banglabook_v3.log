@@ -1,0 +1,51 @@
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 51812.77it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert_large
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+classifier.out_proj.bias                          | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.dense.bias                             | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+     0s epoch 0 step 0 loss 1.0734
+   106s epoch 0 step 1000 loss 1.0075
+   212s epoch 0 step 2000 loss 0.9769
+   317s epoch 0 step 3000 loss 0.7483
+   421s epoch 0 step 4000 loss 0.7955
+   525s epoch 0 step 5000 loss 0.7435
+   629s epoch 0 step 6000 loss 0.9858
+{'split': 'validation', 'acc': 0.8957990636467165, 'weighted_f1': 0.8465622521057139, 'macro_f1': 0.31501195839590634}
+   736s epoch 1 step 0 loss 1.1498
+   841s epoch 1 step 1000 loss 0.6544
+   946s epoch 1 step 2000 loss 0.8681
+  1051s epoch 1 step 3000 loss 0.2799
+  1156s epoch 1 step 4000 loss 0.2923
+  1262s epoch 1 step 5000 loss 1.0476
+  1368s epoch 1 step 6000 loss 0.6640
+{'split': 'validation', 'acc': 0.8957990636467165, 'weighted_f1': 0.8465622521057139, 'macro_f1': 0.31501195839590634}
+  1475s epoch 2 step 0 loss 1.1112
+  1580s epoch 2 step 1000 loss 0.8714
+  1686s epoch 2 step 2000 loss 1.0924
+  1791s epoch 2 step 3000 loss 0.3491
+  1899s epoch 2 step 4000 loss 0.7602
+  2010s epoch 2 step 5000 loss 0.3122
+  2120s epoch 2 step 6000 loss 1.0228
+{'split': 'validation', 'acc': 0.8957990636467165, 'weighted_f1': 0.8465622521057139, 'macro_f1': 0.31501195839590634}
+  2233s epoch 3 step 0 loss 1.2522
+  2344s epoch 3 step 1000 loss 0.9295
+  2448s epoch 3 step 2000 loss 0.3464
+  2551s epoch 3 step 3000 loss 1.2039
+  2653s epoch 3 step 4000 loss 0.9614
+  2757s epoch 3 step 5000 loss 1.0017
+  2859s epoch 3 step 6000 loss 0.3215
+{'split': 'validation', 'acc': 0.8957990636467165, 'weighted_f1': 0.8465622521057139, 'macro_f1': 0.31501195839590634}
+[W1106 13:17:02.504734622 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 201326592 bytes (free: 157089792, total: 12346195968).
+{'split': 'test', 'acc': 0.8957423926108686, 'weighted_f1': 0.8464804469717205, 'macro_f1': 0.3150014460833389}
+DONE

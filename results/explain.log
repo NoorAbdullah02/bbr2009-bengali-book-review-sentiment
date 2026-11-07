@@ -1,0 +1,140 @@
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 54482.26it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+              precision    recall  f1-score   support
+
+    negative     0.9495    0.9126    0.9307       206
+    positive     0.9118    0.9490    0.9300       196
+
+    accuracy                         0.9303       402
+   macro avg     0.9306    0.9308    0.9303       402
+weighted avg     0.9311    0.9303    0.9304       402
+
+errors 28 of 402
+PartitionExplainer explainer:   7%|▋         | 4/60 [00:00<?, ?it/s]PartitionExplainer explainer:  10%|█         | 6/60 [00:11<00:12,  4.43it/s]PartitionExplainer explainer:  12%|█▏        | 7/60 [00:11<00:11,  4.55it/s]PartitionExplainer explainer:  13%|█▎        | 8/60 [00:13<00:37,  1.37it/s]PartitionExplainer explainer:  15%|█▌        | 9/60 [00:14<00:55,  1.10s/it]PartitionExplainer explainer:  17%|█▋        | 10/60 [00:16<01:02,  1.25s/it]PartitionExplainer explainer:  18%|█▊        | 11/60 [00:18<01:08,  1.40s/it]PartitionExplainer explainer:  20%|██        | 12/60 [00:18<00:53,  1.12s/it]PartitionExplainer explainer:  22%|██▏       | 13/60 [00:20<01:00,  1.28s/it]PartitionExplainer explainer:  23%|██▎       | 14/60 [00:21<01:03,  1.38s/it]PartitionExplainer explainer:  25%|██▌       | 15/60 [00:23<01:04,  1.44s/it]PartitionExplainer explainer:  27%|██▋       | 16/60 [00:25<01:05,  1.50s/it]PartitionExplainer explainer:  28%|██▊       | 17/60 [00:25<00:50,  1.18s/it]PartitionExplainer explainer:  30%|███       | 18/60 [00:26<00:51,  1.22s/it]PartitionExplainer explainer:  32%|███▏      | 19/60 [00:28<00:54,  1.33s/it]PartitionExplainer explainer:  35%|███▌      | 21/60 [00:28<00:29,  1.33it/s]PartitionExplainer explainer:  37%|███▋      | 22/60 [00:30<00:37,  1.03it/s]PartitionExplainer explainer:  38%|███▊      | 23/60 [00:30<00:28,  1.28it/s]PartitionExplainer explainer:  40%|████      | 24/60 [00:30<00:22,  1.60it/s]PartitionExplainer explainer:  42%|████▏     | 25/60 [00:32<00:31,  1.11it/s]PartitionExplainer explainer:  43%|████▎     | 26/60 [00:32<00:25,  1.35it/s]PartitionExplainer explainer:  47%|████▋     | 28/60 [00:34<00:24,  1.30it/s]PartitionExplainer explainer:  48%|████▊     | 29/60 [00:35<00:30,  1.02it/s]PartitionExplainer explainer:  50%|█████     | 30/60 [00:36<00:28,  1.05it/s]PartitionExplainer explainer:  52%|█████▏    | 31/60 [00:38<00:33,  1.16s/it]PartitionExplainer explainer:  53%|█████▎    | 32/60 [00:38<00:24,  1.13it/s]PartitionExplainer explainer:  55%|█████▌    | 33/60 [00:40<00:29,  1.11s/it]PartitionExplainer explainer:  57%|█████▋    | 34/60 [00:42<00:33,  1.29s/it]PartitionExplainer explainer:  58%|█████▊    | 35/60 [00:42<00:28,  1.13s/it]PartitionExplainer explainer:  60%|██████    | 36/60 [00:43<00:20,  1.18it/s]PartitionExplainer explainer:  62%|██████▏   | 37/60 [00:44<00:20,  1.11it/s]PartitionExplainer explainer:  63%|██████▎   | 38/60 [00:45<00:25,  1.16s/it]PartitionExplainer explainer:  65%|██████▌   | 39/60 [00:46<00:19,  1.06it/s]PartitionExplainer explainer:  67%|██████▋   | 40/60 [00:47<00:23,  1.18s/it]PartitionExplainer explainer:  68%|██████▊   | 41/60 [00:48<00:20,  1.09s/it]PartitionExplainer explainer:  70%|███████   | 42/60 [00:50<00:23,  1.28s/it]PartitionExplainer explainer:  72%|███████▏  | 43/60 [00:52<00:23,  1.40s/it]PartitionExplainer explainer:  73%|███████▎  | 44/60 [00:53<00:23,  1.47s/it]PartitionExplainer explainer:  75%|███████▌  | 45/60 [00:54<00:19,  1.31s/it]PartitionExplainer explainer:  77%|███████▋  | 46/60 [00:55<00:13,  1.01it/s]PartitionExplainer explainer:  78%|███████▊  | 47/60 [00:56<00:12,  1.02it/s]PartitionExplainer explainer:  82%|████████▏ | 49/60 [00:56<00:06,  1.64it/s]PartitionExplainer explainer:  85%|████████▌ | 51/60 [00:56<00:03,  2.44it/s]PartitionExplainer explainer:  87%|████████▋ | 52/60 [00:57<00:04,  1.80it/s]PartitionExplainer explainer:  88%|████████▊ | 53/60 [00:57<00:03,  2.21it/s]PartitionExplainer explainer:  90%|█████████ | 54/60 [00:58<00:02,  2.24it/s]PartitionExplainer explainer:  92%|█████████▏| 55/60 [00:59<00:02,  1.67it/s]PartitionExplainer explainer:  93%|█████████▎| 56/60 [00:59<00:02,  1.61it/s]PartitionExplainer explainer:  97%|█████████▋| 58/60 [01:00<00:00,  2.11it/s]PartitionExplainer explainer: 100%|██████████| 60/60 [01:01<00:00,  2.11it/s]PartitionExplainer explainer: 61it [01:02,  1.76it/s]                        PartitionExplainer explainer: 61it [01:02,  1.09s/it]
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 109 (m) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 101 (e) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 97 (a) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 110 (n) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 83 (S) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 72 (H) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 65 (A) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 80 (P) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 116 (t) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 111 (o) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 119 (w) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 114 (r) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 100 (d) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 112 (p) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 115 (s) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 105 (i) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 118 (v) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 99 (c) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 108 (l) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 77 (M) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 102 (f) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 117 (u) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 107 (k) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 66 (B) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 103 (g) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 69 (E) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 82 (R) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:67: UserWarning: Glyph 84 (T) missing from font(s) Noto Sans Bengali.
+  plt.tight_layout()
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 77 (M) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 111 (o) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 115 (s) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 116 (t) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 105 (i) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 110 (n) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 102 (f) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 108 (l) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 117 (u) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 101 (e) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 97 (a) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 107 (k) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 66 (B) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 103 (g) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 69 (E) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 82 (R) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 84 (T) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 109 (m) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 83 (S) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 72 (H) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 65 (A) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 80 (P) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 119 (w) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 114 (r) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 100 (d) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 112 (p) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 118 (v) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+/Research/DSP/src/explain.py:68: UserWarning: Glyph 99 (c) missing from font(s) Noto Sans Bengali.
+  plt.savefig(f'{OUT}/top_tokens.png', dpi=200)
+done

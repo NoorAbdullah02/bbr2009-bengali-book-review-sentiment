@@ -1,0 +1,62 @@
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 52140.97it/s]
+[transformers] [1mElectraModel LOAD REPORT[0m from: /Research/DSP/models/banglabert
+Key                                               | Status     |  | 
+--------------------------------------------------+------------+--+-
+discriminator_predictions.dense.bias              | UNEXPECTED |  | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED |  | 
+discriminator_predictions.dense.weight            | UNEXPECTED |  | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+pretrained embeddings (32000, 768)
+   23s s0 f0 BiLSTM+Attn  0.925
+   42s s0 f0 BiGRU+Attn   0.903
+   67s s0 f0 BiLSTM       0.908
+  110s s0 f1 BiLSTM+Attn  0.878
+  139s s0 f1 BiGRU+Attn   0.886
+  160s s0 f1 BiLSTM       0.861
+  193s s0 f2 BiLSTM+Attn  0.851
+  213s s0 f2 BiGRU+Attn   0.833
+  231s s0 f2 BiLSTM       0.846
+  278s s0 f3 BiLSTM+Attn  0.878
+  314s s0 f3 BiGRU+Attn   0.891
+  352s s0 f3 BiLSTM       0.883
+  392s s0 f4 BiLSTM+Attn  0.860
+  429s s0 f4 BiGRU+Attn   0.845
+  455s s0 f4 BiLSTM       0.873
+  475s s1 f0 BiLSTM+Attn  0.881
+  507s s1 f0 BiGRU+Attn   0.888
+  529s s1 f0 BiLSTM       0.886
+  552s s1 f1 BiLSTM+Attn  0.836
+  575s s1 f1 BiGRU+Attn   0.863
+  606s s1 f1 BiLSTM       0.888
+  635s s1 f2 BiLSTM+Attn  0.853
+  657s s1 f2 BiGRU+Attn   0.853
+  680s s1 f2 BiLSTM       0.863
+  716s s1 f3 BiLSTM+Attn  0.858
+  750s s1 f3 BiGRU+Attn   0.863
+  785s s1 f3 BiLSTM       0.871
+  820s s1 f4 BiLSTM+Attn  0.888
+  850s s1 f4 BiGRU+Attn   0.905
+  875s s1 f4 BiLSTM       0.890
+  907s s2 f0 BiLSTM+Attn  0.853
+  929s s2 f0 BiGRU+Attn   0.888
+  955s s2 f0 BiLSTM       0.893
+  977s s2 f1 BiLSTM+Attn  0.866
+  998s s2 f1 BiGRU+Attn   0.873
+ 1028s s2 f1 BiLSTM       0.883
+ 1052s s2 f2 BiLSTM+Attn  0.868
+ 1066s s2 f2 BiGRU+Attn   0.861
+ 1086s s2 f2 BiLSTM       0.843
+ 1119s s2 f3 BiLSTM+Attn  0.871
+ 1158s s2 f3 BiGRU+Attn   0.886
+ 1187s s2 f3 BiLSTM       0.881
+ 1212s s2 f4 BiLSTM+Attn  0.888
+ 1238s s2 f4 BiGRU+Attn   0.868
+ 1265s s2 f4 BiLSTM       0.873
+               mean     std
+model                      
+BiGRU+Attn   0.8737  0.0209
+BiLSTM       0.8761  0.0175
+BiLSTM+Attn  0.8703  0.0212

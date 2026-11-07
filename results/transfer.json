@@ -1,0 +1,30 @@
+[
+ {
+  "train": "mendeley",
+  "test": "rokomari",
+  "n": 5400,
+  "acc": 0.8448148148148148,
+  "macro_f1": 0.8425332753371031
+ },
+ {
+  "train": "mendeley",
+  "test": "banglabook_subset",
+  "n": 595,
+  "acc": 0.7697478991596639,
+  "macro_f1": 0.583301383798263
+ },
+ {
+  "train": "rokomari",
+  "test": "mendeley",
+  "n": 1442,
+  "acc": 0.9119278779472955,
+  "macro_f1": 0.9027494337839166
+ },
+ {
+  "train": "rokomari",
+  "test": "banglabook_subset",
+  "n": 595,
+  "acc": 0.8235294117647058,
+  "macro_f1": 0.6379289361282882
+ }
+]

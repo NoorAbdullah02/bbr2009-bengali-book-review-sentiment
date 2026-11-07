@@ -1,0 +1,42 @@
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 47684.83it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert_large
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+     0s epoch 0 step 0 loss 1.0734
+   104s epoch 0 step 1000 loss 1.0476
+   208s epoch 0 step 2000 loss 0.9162
+   312s epoch 0 step 3000 loss 0.6039
+   415s epoch 0 step 4000 loss 0.8628
+   518s epoch 0 step 5000 loss 0.7003
+   622s epoch 0 step 6000 loss 0.6331
+{'split': 'validation', 'acc': 0.9239529292673668, 'weighted_f1': 0.9027398319126554, 'macro_f1': 0.5532895730239479}
+   727s epoch 1 step 0 loss 0.7170
+   831s epoch 1 step 1000 loss 0.7158
+   936s epoch 1 step 2000 loss 1.2020
+  1040s epoch 1 step 3000 loss 0.0977
+  1144s epoch 1 step 4000 loss 0.0938
+  1248s epoch 1 step 5000 loss 1.0994
+  1351s epoch 1 step 6000 loss 0.1684
+{'split': 'validation', 'acc': 0.9269897507275718, 'weighted_f1': 0.9145108841551628, 'macro_f1': 0.6201111396034255}
+  1456s epoch 2 step 0 loss 0.6719
+  1562s epoch 2 step 1000 loss 0.9373
+  1669s epoch 2 step 2000 loss 1.0289
+  1774s epoch 2 step 3000 loss 0.0974
+  1879s epoch 2 step 4000 loss 0.0788
+  1986s epoch 2 step 5000 loss 0.0836
+  2091s epoch 2 step 6000 loss 0.3945
+{'split': 'validation', 'acc': 0.9300265721877768, 'weighted_f1': 0.9182779586053833, 'macro_f1': 0.6438254661580168}
+{'split': 'test', 'acc': 0.930410577592206, 'weighted_f1': 0.9187452194933922, 'macro_f1': 0.6413365007503495}
+DONE

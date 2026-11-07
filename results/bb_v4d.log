@@ -1,0 +1,23 @@
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 58416.91it/s]
+[transformers] [1mElectraForSequenceClassification LOAD REPORT[0m from: /Research/DSP/models/banglabert_large
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+classifier.dense.bias                             | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+   373s ep0 step3458 val {'acc': 0.9240161963811211, 'wf1': 0.9017262009266442, 'mf1': 0.5377740946723021}
+   770s ep0 step6916 val {'acc': 0.9255978742249779, 'wf1': 0.9061148560246802, 'mf1': 0.5534777528749398}
+  1168s ep1 step10374 val {'acc': 0.9297735037327597, 'wf1': 0.9181842720213877, 'mf1': 0.6375910674618238}
+  1569s ep1 step13832 val {'acc': 0.9312919144628622, 'wf1': 0.9216620422718693, 'mf1': 0.6520878209833584}
+  1970s ep2 step17290 val {'acc': 0.9309123117803366, 'wf1': 0.9234486769075751, 'mf1': 0.6707083201885312}
+  2370s ep2 step20748 val {'acc': 0.9326837909654562, 'wf1': 0.9247144892352307, 'mf1': 0.6750196178683551}
+DONE best val wf1 0.9247144892352307

@@ -1,0 +1,118 @@
+## BanglaBERT base / large / ensemble (primary 2,009, 3 seeds x 5-fold = 15 runs)
+
+| Model | Accuracy % | Macro-F1 % |
+|---|---|---|
+| base | 93.84 ± 1.10 | 93.84 ± 1.11 |
+| large | 93.81 ± 1.04 | 93.81 ± 1.04 |
+| ensemble | 94.23 ± 0.82 | 94.22 ± 0.82 |
+
+Paired per-run diff ensemble-base: mean 0.38 pts, Wilcoxon p=0.162; large-base: mean -0.03 pts, p=0.887
+
+## Main results (5-fold CV accuracy %)
+
+| Dataset | BanglaBERT | Best classical (TF-IDF) | Best from-scratch RNN | Previous best (paper) |
+|---|---|---|---|---|
+| mendeley | 96.72 ± 1.19 (F1 96.25 ± 1.39) | MultinomialNB 94.24 ± 1.72 | n/a | 84% (NB, Hossain 2020) |
+| primary | 93.84 ± 1.10 (F1 93.84 ± 1.11) | LinearSVM 90.29 ± 2.28 | BiLSTM+Attn 81.08 ± 3.75 | n/a |
+| rokomari | 90.60 ± 0.72 (F1 90.47 ± 0.75) | LinearSVM 88.42 ± 1.02 | n/a | 88.95% wF1 (XLM-R, Sarker 2022) |
+
+### Classical TF-IDF baselines, mendeley
+
+| Model | Acc % | Macro-F1 % |
+|---|---|---|
+| MultinomialNB | 94.24 ± 1.72 | 93.42 |
+| LinearSVM | 93.55 ± 1.84 | 92.62 |
+| LogisticRegression | 93.48 ± 1.69 | 92.59 |
+| RBF-SVM | 93.20 ± 1.50 | 92.11 |
+| MLP | 92.65 ± 1.56 | 91.41 |
+| LDA | 91.75 ± 1.42 | 90.51 |
+| KNN | 90.64 ± 1.14 | 88.65 |
+| ExtraTrees | 90.36 ± 1.56 | 88.53 |
+| LightGBM | 89.88 ± 2.17 | 88.40 |
+| XGBoost | 89.25 ± 1.15 | 87.61 |
+| CatBoost | 88.21 ± 2.35 | 86.33 |
+| HistGradientBoosting | 88.07 ± 2.20 | 86.33 |
+| RandomForest | 88.07 ± 1.65 | 85.65 |
+| GradientBoosting | 87.24 ± 1.88 | 85.10 |
+| BernoulliNB | 86.89 ± 3.53 | 84.51 |
+| AdaBoost | 86.20 ± 2.04 | 84.21 |
+| GaussianNB | 84.26 ± 2.32 | 81.85 |
+| DecisionTree | 79.34 ± 3.16 | 76.36 |
+| QDA | 67.27 ± 0.13 | 40.22 |
+
+### Classical TF-IDF baselines, primary
+
+| Model | Acc % | Macro-F1 % |
+|---|---|---|
+| LinearSVM | 90.29 ± 2.28 | 90.28 |
+| LogisticRegression | 89.89 ± 2.36 | 89.88 |
+| RBF-SVM | 89.84 ± 2.54 | 89.82 |
+| MultinomialNB | 89.30 ± 2.05 | 89.29 |
+| MLP | 88.95 ± 2.77 | 88.94 |
+| LDA | 88.75 ± 2.10 | 88.73 |
+| ExtraTrees | 87.80 ± 2.69 | 87.77 |
+| LightGBM | 87.26 ± 1.92 | 87.22 |
+| RandomForest | 86.06 ± 2.28 | 86.03 |
+| XGBoost | 86.06 ± 1.96 | 86.03 |
+| CatBoost | 85.81 ± 2.65 | 85.79 |
+| KNN | 85.37 ± 2.51 | 85.30 |
+| BernoulliNB | 85.26 ± 2.33 | 85.26 |
+| HistGradientBoosting | 85.07 ± 2.75 | 85.05 |
+| GradientBoosting | 84.77 ± 2.26 | 84.74 |
+| AdaBoost | 82.38 ± 2.71 | 82.35 |
+| GaussianNB | 77.65 ± 2.06 | 77.63 |
+| DecisionTree | 74.96 ± 2.74 | 74.93 |
+| QDA | 53.41 ± 0.62 | 38.65 |
+
+### Classical TF-IDF baselines, rokomari
+
+| Model | Acc % | Macro-F1 % |
+|---|---|---|
+| LinearSVM | 88.42 ± 1.02 | 88.30 |
+| RBF-SVM | 88.36 ± 0.79 | 88.23 |
+| LogisticRegression | 88.16 ± 0.94 | 88.05 |
+| MLP | 88.11 ± 1.08 | 87.97 |
+| LightGBM | 86.66 ± 0.95 | 86.50 |
+| LDA | 86.32 ± 0.76 | 86.16 |
+| KNN | 85.87 ± 0.84 | 85.70 |
+| CatBoost | 85.85 ± 0.37 | 85.66 |
+| HistGradientBoosting | 85.85 ± 0.37 | 85.64 |
+| XGBoost | 85.78 ± 1.23 | 85.61 |
+| GradientBoosting | 84.73 ± 0.81 | 84.52 |
+| MultinomialNB | 84.08 ± 1.52 | 83.92 |
+| ExtraTrees | 83.72 ± 1.53 | 83.45 |
+| RandomForest | 83.67 ± 1.56 | 83.48 |
+| AdaBoost | 81.27 ± 1.35 | 81.11 |
+| DecisionTree | 75.97 ± 1.59 | 75.78 |
+| BernoulliNB | 71.69 ± 1.30 | 71.31 |
+| GaussianNB | 66.71 ± 2.15 | 62.90 |
+| QDA | 54.41 ± 0.04 | 35.24 |
+
+### From-scratch recurrent models, primary 2,009 (5 seeds × 5-fold = 25 runs each)
+
+| Model | CV Acc % | CV Macro-F1 % | External Acc % |
+|---|---|---|---|
+| BiLSTM+Attn | 81.08 ± 3.75 | 80.99 | 60.53 |
+| BiGRU+Attn | 80.62 ± 4.05 | 80.50 | 61.18 |
+| BiLSTM | 80.43 ± 4.33 | 80.36 | 59.17 |
+| BiGRU | 79.88 ± 4.81 | 79.82 | 58.91 |
+| LSTM | 79.54 ± 4.87 | 79.40 | 59.57 |
+| GRU+Attn | 79.45 ± 3.58 | 79.31 | 61.02 |
+| BiRNN+Attn | 79.41 ± 4.02 | 79.29 | 60.53 |
+| LSTM+Attn | 78.78 ± 4.35 | 78.66 | 57.89 |
+| RNN+Attn | 78.33 ± 4.18 | 78.20 | 59.23 |
+| GRU | 78.06 ± 6.72 | 77.94 | 58.48 |
+| BiRNN | 75.11 ± 4.82 | 75.00 | 56.24 |
+| RNN | 73.57 ± 6.20 | 73.43 | 55.34 |
+
+### BanglaBERT ablation (primary, seed 0, 5-fold)
+
+| Variant | Acc % |
+|---|---|
+| default (LR 3e-5, len 128, 4 ep, class weight) | 94.00 ± 1.15 |
+| LR 5e-5 | 93.88 ± 1.60 |
+| no class weight | 93.43 ± 1.43 |
+| max length 64 | 93.18 ± 1.15 |
+| 2 epochs | 93.08 ± 0.81 |
+
+Mendeley seed 0: BanglaBERT per-fold [96.19, 96.89, 96.18, 97.22, 97.57] vs MultinomialNB [92.39, 95.5, 95.14, 95.83, 92.36]; min per-fold gain 1.04 pts.
