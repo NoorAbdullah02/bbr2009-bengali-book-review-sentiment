@@ -29,7 +29,7 @@ Cross-validated benchmark of Bengali book-review sentiment classification (recur
 ## Still to do (cannot be done by code alone)
 1. Human annotation of `annotation/annotator1.csv` (200 reviews, label column `label_P_N_U`); do not open `results/annot_*.csv` before finishing. Then compute Cohen's kappa and update the label-noise section.
 2. Choose the venue and move the paper to its template and page limit.
-3. Make an anonymous mirror of this repository for review (for example anonymous.4open.science) and put its URL where the paper says `[repository URL to be inserted]`.
+3. The paper currently links the private GitHub repository. For a double-blind review, replace that link (Availability section) with an anonymous mirror URL (for example anonymous.4open.science), because the GitHub link shows the account name; for single-blind or camera-ready, make the repository public first.
 4. Check two reference page ranges at the source (Guo et al., ICML 2017, pp. 1321-1330; Vaswani et al., NeurIPS 2017, pp. 5998-6008).
 5. Supervisor review and proofreading; fill in real author names and affiliations only for the final version.
 6. Optional extras that would strengthen the paper: few-shot large language model baseline, a second human annotator, tuned recurrent/classical baselines.
