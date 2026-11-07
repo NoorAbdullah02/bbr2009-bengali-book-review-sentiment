@@ -26,6 +26,9 @@ Cross-validated benchmark of Bengali book-review sentiment classification (recur
 - Label noise: 69 of 111 errors are confident (p>0.9); 8.6% of BanglaBook reviews against 1.3% of Mendeley reviews. A blind audit by a single language-model annotator agrees with the dataset label on 96.6% of random reviews but only 25.9% of the suspected ones.
 - Honest framing: no state-of-the-art claim.
 
+## Where to submit
+See `SUBMISSION_OPTIONS.md` (venues, deadlines, fees, payment from Bangladesh, what to change per venue, draft emails).
+
 ## Still to do (cannot be done by code alone)
 1. Human annotation of `annotation/annotator1.csv` (200 reviews, label column `label_P_N_U`); do not open `results/annot_*.csv` before finishing. Then compute Cohen's kappa and update the label-noise section.
 2. Choose the venue and move the paper to its template and page limit.
