@@ -83,15 +83,15 @@ chk('M->BB', tr[('mendeley', 'banglabook_subset')]['acc'] * 100, 77.0, .06); chk
 chk('M->BB f1', tr[('mendeley', 'banglabook_subset')]['macro_f1'] * 100, 58.3, .06); chk('R->BB f1', tr[('rokomari', 'banglabook_subset')]['macro_f1'] * 100, 63.8, .06)
 rk = json.load(open(R + 'rokomari_protocol.json')); w = np.array([x['weighted_f1'] for x in rk]) * 100
 chk('rok protocol mean', w.mean(), 89.97, .01); chk('rok protocol sd', w.std(ddof=1), 0.66, .01)
-bb = json.load(open(R + 'bb_ensemble.json')); chk('BB ens wf1', bb['test']['wf1'], .927, .0006); chk('BB ens acc', bb['test']['acc'] * 100, 93.5, .06); chk('BB ens mf1', bb['test']['mf1'], .685, .001)
-for t, v in [('v4a', .925), ('v4b', .926), ('v4c', .923)]:
+bb = json.load(open(R + 'bb_ensemble.json')); chk('BB ens wf1', bb['test']['wf1'], .927, .0006); chk('BB ens acc', bb['test']['acc'] * 100, 93.6, .06); chk('BB ens mf1', bb['test']['mf1'], .681, .001)
+for t, v in [('v4a', .925), ('v4b', .926), ('v4c', .923), ('v4d', .925), ('v4e', .925), ('v4f', .925)]:
     ty = pd.read_csv('data/banglabook/test.csv').label.values; chk('BB ' + t, f1_score(ty, np.load(f'{R}bb_{t}_test.npy').argmax(1), average='weighted'), v, .0006)
 chk('BB v1', json.load(open(R + 'banglabook_result.json'))['test']['weighted_f1'], .892, .0006); chk('BB v2', json.load(open(R + 'banglabook_v2_result.json'))['test']['weighted_f1'], .9187, .0006)
 chk('BB v3', json.load(open(R + 'banglabook_v3_result.json'))['test']['weighted_f1'], .846, .0006)
 # per-class F1 of final ensemble
 ty = pd.read_csv('data/banglabook/test.csv').label.values; vy = pd.read_csv('data/banglabook/validation.csv').label.values
 pt = np.mean([np.load(f'{R}bb_{t}_test.npy') for t in bb['members']], 0); fin = np.log(pt + 1e-9) + np.array(list(bb['offsets']) + [0])
-pc = f1_score(ty, fin.argmax(1), average=None); chk('per-class neg', pc[0], .71, .006); chk('per-class neu', pc[1], .37, .006); chk('per-class pos', pc[2], .97, .006)
+pc = f1_score(ty, fin.argmax(1), average=None); chk('per-class neg', pc[0], .72, .006); chk('per-class neu', pc[1], .36, .006); chk('per-class pos', pc[2], .97, .006)
 # dataset table
 x = pd.read_excel('data/rokomari/annotated_reviews.xlsx'); chk('rok pos', (x.category == 'positive').sum(), 3051, 0); chk('rok neg', (x.category == 'negative').sum(), 2585, 0)
 m = pd.read_excel('data/mendeley/BookReviews.xlsx').rename(columns={'Review': 'text', 'Sentiment': 'label'}).drop_duplicates('text'); chk('mend n', len(m), 1442, 0); chk('mend pos', (m.label == 1).sum(), 970, 0)

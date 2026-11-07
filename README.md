@@ -1,5 +1,7 @@
 # BBR-2009: Bengali book review sentiment, cross-validated benchmark
 
+See `HANDOFF.md` for the current status, open tasks and how to rebuild everything. Single branch: `master`.
+
 Code, data release and result tables for the paper *Beyond the Single Split: A Reproducible Benchmark of Bengali Book Review Sentiment Classification with Explanations and Label-Noise Analysis* (`paper/paper.pdf`).
 
 ## What is here
