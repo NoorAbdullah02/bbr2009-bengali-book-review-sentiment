@@ -26,6 +26,9 @@ Cross-validated benchmark of Bengali book-review sentiment classification (recur
 - Label noise: 69 of 111 errors are confident (p>0.9); 8.6% of BanglaBook reviews against 1.3% of Mendeley reviews. A blind audit by a single language-model annotator agrees with the dataset label on 96.6% of random reviews but only 25.9% of the suspected ones.
 - Honest framing: no state-of-the-art claim.
 
+## Ready to upload
+`submission/QPAIN2027_submission_blind.pdf` is a blind, submit-ready version for QPAIN 2027 (see `submission/README.md` for the steps).
+
 ## Where to submit
 See `SUBMISSION_OPTIONS.md` (venues, deadlines, fees, payment from Bangladesh, what to change per venue, draft emails).
 
